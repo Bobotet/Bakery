@@ -1,0 +1,963 @@
+@charset "UTF-8";
+/*Обнуление*/
+@import url("https://fonts.googleapis.com/css2?family=Alegreya&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya&family=Alegreya+Sans+SC:ital,wght@1,700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+textarea {
+  resize: none;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------*/
+.container {
+  max-width: 1260px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  background-color: #fefdfc;
+  width: 100%;
+}
+
+.welcome-block {
+  background: url(../img/welcome-block/welcome-block__background.png) 0 0/cover no-repeat;
+  padding: 18px 0 0 0;
+  position: relative;
+  z-index: 1;
+  min-height: 900px;
+  margin-bottom: 105px;
+}
+
+.welcome-block__navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 221px;
+}
+
+.welcome-blog__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.welcome-blog__item {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  color: #ffffff;
+  margin-right: 36px;
+  line-height: 44px;
+}
+.welcome-blog__item a {
+  font-family: "Alegreya", serif;
+  color: #ffffff;
+}
+.welcome-blog__item a:hover {
+  cursor: pointer;
+}
+.welcome-blog__item:last-of-type {
+  margin-right: 151px;
+}
+
+.welcome-blog__logo {
+  margin-right: 104px;
+}
+
+.welcome-block__twitter-picture, .welcome-block__facebook-picture {
+  margin-right: 20px;
+}
+
+.welcome-block__social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.welcome-block__social-media img {
+  display: block;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.welcome-block__nav-line {
+  width: 100%;
+  height: 70px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.welcome-block__title {
+  font-family: "Playfair Display";
+  font-size: 92px;
+  line-height: 24px;
+  font-weight: 700;
+  letter-spacing: 0.075em;
+  text-shadow: 0px 1px 0px #3d3029;
+  color: #ffffff;
+  margin-bottom: 136px;
+  text-align: center;
+}
+
+.welcome-block__text {
+  font-family: "Proxima Nova";
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-shadow: 0px 1px 0px #3d3029;
+  color: #ffffff;
+  text-align: center;
+  max-width: 550px;
+  margin: 0 auto 69px auto;
+}
+
+.welcome-block__button {
+  width: 200px;
+  height: 50px;
+  border: 1px solid #9e9c93;
+  font-family: "Alegreya", serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  color: #ffffff;
+}
+
+.welcome-block__button-block {
+  text-align: center;
+}
+
+.welcome-block__shadow {
+  position: absolute;
+  z-index: -1;
+  top: 14px;
+  left: 50%;
+  margin-left: -470px;
+}
+
+.welcome-block__underline {
+  position: absolute;
+  top: 851px;
+  left: 50%;
+  margin-left: -800px;
+}
+
+.welcome-block__form {
+  position: absolute;
+  top: 837px;
+  left: 50%;
+  margin-left: -53px;
+  z-index: 20;
+}
+
+.welcome-block__bread-picture {
+  position: absolute;
+  top: 868px;
+  left: 50%;
+  margin-left: -25px;
+  z-index: 20;
+}
+
+.art-of-cakes {
+  padding: 0 0 120px 0;
+}
+
+.art-of-cakes__colums {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.title {
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-size: 48px;
+  line-height: 30px;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+  color: #56534c;
+  margin-bottom: 17px;
+}
+
+.subtitle {
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #a47d5e;
+  margin-bottom: 70px;
+}
+
+.text {
+  font-family: "Proxima Nova";
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  color: #56534c;
+}
+
+.art-of-cakes__info {
+  text-align: center;
+  margin-right: 70px;
+}
+
+.art-of-cakes__text {
+  width: 490px;
+  margin-bottom: 45px;
+}
+
+.art-of-cakes__chef-cook-title {
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+  color: #56534c;
+  margin-bottom: 49px;
+}
+
+.art-of-cakes__chef-cook-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  margin-bottom: 45px;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.art-of-cakes__chef-cook-info span {
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  color: #56534c;
+  border-top: 1px solid #d7d5ca;
+  border-bottom: 1px solid #d7d5ca;
+  height: 75px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.art-of-cakes__background-photo {
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  top: -5px;
+  margin-left: -69px;
+}
+
+.art-of-cakes__chef-cook-text {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.art-of-cakes__chef-cook-text span {
+  display: inline-block;
+  font-family: Scriptina;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  color: #a47d5e;
+  margin: 0 50px;
+  max-width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.art-of-cakes__up-quote, .art-of-cakes__down-quote {
+  position: absolute;
+}
+
+.art-of-cakes__up-quote {
+  left: 55px;
+}
+
+.art-of-cakes__down-quote {
+  top: 70px;
+  left: 415px;
+}
+
+.art-of-cakes__photos {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.art-of-cakes__photos > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+
+.art-of-cakes__photos > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+}
+
+.art-of-cakes__photos > *:nth-child(3) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+}
+
+.art-of-cakes__photos > *:nth-child(4) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+}
+
+.art-of-cakes__border {
+  position: absolute;
+}
+
+.art-of-cakes__first-border {
+  top: 7px;
+  left: 15px;
+}
+
+.art-of-cakes__second-border {
+  top: 7px;
+  left: 327px;
+}
+
+.art-of-cakes__third-border {
+  top: 284px;
+  left: 15px;
+}
+
+.art-of-cakes__fourth-border {
+  top: 284px;
+  left: 327px;
+}
+
+.art-of-cakes__form {
+  position: absolute;
+  top: 142px;
+  left: 175px;
+  opacity: 0.6;
+}
+
+.art-of-cakes__taste {
+  position: absolute;
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #c9b176;
+  top: 230px;
+  left: 240px;
+  width: 150px;
+  text-align: center;
+  opacity: 0.6;
+}
+
+.tasty-pancakes {
+  background: url("../img/tasty-pancakes/tasty-pancakes__bg.png") 0 0/100% auto no-repeat;
+  padding: 140px 0 108px 0;
+  position: relative;
+  z-index: -100;
+}
+
+.tasty-pancakes__main-window {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: relative;
+  width: 970px;
+  left: 90px;
+}
+
+.tasty-pancakes__left-side {
+  position: absolute;
+  z-index: -3;
+}
+
+.tasty-pancakes__right-win-bg {
+  position: absolute;
+  left: 400px;
+  z-index: -2;
+}
+
+.tasy-pancakes__right-side {
+  text-align: left;
+}
+
+.tasty-pancakes__title {
+  margin: 80px 0 0 482px;
+}
+
+.tasty-pancakes__subtitle {
+  margin: 15px 0px 0 482px;
+}
+
+.tasty-pancakes__text {
+  margin: 68px 0 0 482px;
+  width: 400px;
+}
+
+.tasty-pancake__left-row, .tasty-pancake__right-row {
+  position: absolute;
+}
+
+.tasty-pancake__left-row {
+  top: 410px;
+  left: 480px;
+}
+
+.tasty-pancake__right-row {
+  top: 410px;
+  left: 874px;
+}
+
+.tasty-pancakes__img-row {
+  width: 332px;
+  margin: 100px 0 0 525px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.tasty-pancakes__mill-picture {
+  position: absolute;
+  left: 704px;
+  top: 215px;
+  z-index: -1;
+}
+
+.tasty-pancakes__additionally-window {
+  height: 200px;
+  width: 200px;
+  background: url("../img/tasty-pancakes/bg_1193.png");
+  position: absolute;
+  top: -40px;
+  left: 965px;
+}
+.tasty-pancakes__additionally-window span:first-of-type {
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #a47d5e;
+  display: block;
+  text-align: center;
+  margin: 34px 0 16px 0;
+}
+.tasty-pancakes__additionally-window span:nth-of-type(2) {
+  font-size: 92px;
+  color: #dfc691;
+  display: block;
+  text-align: center;
+}
+.tasty-pancakes__additionally-window span:last-of-type {
+  text-transform: none;
+  color: #979285;
+  display: block;
+  text-align: center;
+}
+
+.tasty-pancake__blind {
+  position: absolute;
+  top: 248px;
+  left: 505px;
+}
+
+.tasty-pancakes__container {
+  position: relative;
+}
+
+.breakfast {
+  background: url("../img/breakfast/background.png") 0 0/100% auto no-repeat;
+  padding: 79px 0 71px 0;
+  max-height: 720px;
+  overflow: hidden;
+}
+
+.breakfast__colums {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.breakfast__main-title {
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-size: 60px;
+  line-height: 30px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.breakfast__main-subtitle {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #c8a593;
+  margin-bottom: 66px;
+}
+
+.breakfast__little-title {
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.breakfast__little-text {
+  font-family: "Proxima Nova";
+  font-size: 16px;
+  font-weight: 400;
+  color: #c2beba;
+  margin-bottom: 27px;
+}
+
+.breakfast__price {
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-size: 36px;
+  line-height: 30px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  color: #dfc691;
+  margin-bottom: 13px;
+}
+
+.breakfast__left-wing {
+  margin-bottom: 12px;
+}
+
+.breakfast__main-column {
+  text-align: center;
+  min-width: 750px;
+}
+
+.breakfast__list-top {
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #56534c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 120px;
+}
+
+.breakfast__list-title {
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-size: 44px;
+  line-height: 60px;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+  color: #56534c;
+  text-align: center;
+  max-width: 340px;
+  margin: 0 auto 43px auto;
+}
+
+.breakfast__list-text {
+  font-family: "Proxima Nova";
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  color: #56534c;
+  max-width: 330px;
+  text-align: center;
+  margin: 0 auto 55px auto;
+}
+
+.breakfast__list-button {
+  width: 190px;
+  height: 50px;
+  border: 1px solid #9e9c93;
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #a47d5e;
+  display: block;
+  margin: 0 auto 0 auto;
+}
+
+.list {
+  width: 440px;
+  height: 600px;
+  background: url("../img/breakfast/bg_list.png");
+  position: relative;
+  padding: 54px 0 66px 0;
+  outline: 1px dashed #9e9c93;
+  /* Пунктирная рамка */
+  -webkit-box-shadow: 7px 0px 5px 0px rgba(0, 0, 0, 0.8);
+          box-shadow: 7px 0px 5px 0px rgba(0, 0, 0, 0.8);
+  outline-offset: -20px;
+  /* Выводим рамку внутри элемента */
+}
+
+.breakfast__list-column-line {
+  position: absolute;
+  top: 78px;
+  left: 37px;
+}
+
+.breakfast__list-column-vector {
+  position: absolute;
+  top: 91px;
+  left: 200px;
+}
+
+.breakfast__second-list {
+  top: -600px;
+  left: -10px;
+}
+
+.breakfast__third-list {
+  top: -1200px;
+  left: -20px;
+}
+
+.breakfast__fold {
+  position: absolute;
+  left: 0px;
+  top: 565px;
+}
+
+.sandwich {
+  padding: 100px 0 18px 0;
+  text-align: center;
+  background-color: #f3f1e9;
+}
+
+.sandwich__container {
+  position: relative;
+}
+
+.sandwich__ellipse {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 23px;
+}
+
+.sandwich__little-title {
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+  color: #a47d5e;
+  margin-bottom: 23px;
+}
+
+.sandwich__little-text {
+  font-family: "Proxima Nova";
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  color: #56534c;
+  margin: 0 auto 57px auto;
+  max-width: 300px;
+}
+
+.sandwich__colums {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.sandwich__info-column {
+  min-width: 450px;
+}
+
+.sandwich__mins-title {
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #a47d5e;
+  margin-bottom: 20px;
+}
+
+.sandwich__mins-number {
+  font-size: 60px;
+  color: #56534c;
+  margin-bottom: 15px;
+}
+
+.sandwich__mins-text {
+  text-transform: none;
+  color: #979285;
+}
+
+.mins-column {
+  width: 200px;
+  height: 200px;
+  opacity: 0.8;
+  background-color: #ffffff;
+  padding-top: 50px;
+  position: absolute;
+}
+
+.sanwich__picture-column {
+  position: relative;
+}
+
+.sandwich__picture-column-middle {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+
+.sandwich__first-mins-block {
+  top: -20px;
+  left: 635px;
+}
+
+.sandwich__second-mins-block {
+  top: 180px;
+  left: 635px;
+}
+
+.sandwich__third-mins-block {
+  padding-top: 35px;
+  top: 380px;
+  left: 635px;
+  background: url("../img/sandwich/bg.png");
+  opacity: 1;
+}
+.sandwich__third-mins-block .sandwich__mins-number {
+  font-size: 92px;
+  color: #dfc691;
+  margin-bottom: 10px;
+}
+.sandwich__third-mins-block .sandwich__mins-title {
+  margin-bottom: 10px;
+}
+
+.sandwich__recipe-button {
+  width: 171px;
+  height: 60px;
+  border: 1px solid #dfc691;
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #dfc691;
+  line-height: 55px;
+  background-color: #fff;
+  position: relative;
+  top: -20px;
+  left: -15px;
+  display: block;
+}
+
+.sandwich__vector {
+  position: absolute;
+  top: -95px;
+  left: 250px;
+  opacity: 0.16;
+}
+
+footer {
+  padding: 123px 0 73px 0;
+  background-color: #f3f1e9;
+}
+
+.footer__blocks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__first-menu-block, .footer__second-menu-block {
+  width: 515px;
+  height: 1px;
+  background-color: #c2beba;
+  -webkit-box-shadow: 0px 35px 18px 25px rgba(0, 0, 0, 0.37);
+          box-shadow: 0px 35px 18px 25px rgba(0, 0, 0, 0.37);
+}
+
+.footer__menu-item {
+  margin-right: 35px;
+}
+
+.footer__title {
+  font-family: Scriptina;
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 400;
+  letter-spacing: 0.3em;
+  color: #56534c;
+}
+
+.footer__first-menu, .footer__second-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-family: "Proxima Nova";
+  font-size: 14px;
+  line-height: 60px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  color: #56534c;
+  text-transform: uppercase;
+}
+.footer__first-menu a, .footer__second-menu a {
+  font-family: "Alegreya", serif;
+  color: #ffffff;
+}
